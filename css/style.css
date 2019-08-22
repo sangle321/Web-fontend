@@ -1,0 +1,244 @@
+@import  url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: .75rem;
+}
+
+/* Utility classes */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+.text__center {
+    text-align: center;
+}
+
+.text__primary {
+    color: #93cb52;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.bg-primary{
+    background: #93cb52;
+    color: #fff;
+}
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: .75rem;
+    line-height: 1.1;
+}
+
+.m-heading {
+    font-size: 3rem;
+    margin-bottom: .75rem;
+    line-height: 1.1;
+}
+
+.py-1 { padding: 1.5rem 0;}
+.py-2 { padding: 2rem 0;}
+.py-3 { padding: 3rem 0;}
+
+.p-1 { padding: 1.5rem ;}
+.p-2 { padding: 2rem ;}
+.p-3 { padding: 3rem ;}
+
+.header__text {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: #fff;
+    background: #93cb52;
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover { 
+    background: #5e8135;
+}
+
+ /* Navbar */ 
+
+
+
+ .navbar{
+     display: flex;
+     position: sticky;
+     top: 0;
+     background: #333;
+     color: #fff;
+     justify-content: space-between;
+     z-index: 1;
+     padding: 1rem;
+ }
+
+ .navbar ul {
+     display: flex;
+     align-items: center;
+     list-style-type: none;
+ }
+
+ .navbar ul li a {
+     color: #fff;
+     padding: .75rem;
+     margin: 0 .25rem;
+ }
+
+ .navbar ul li a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+}
+
+/* ShowCase */
+
+#show__case {
+    background: #333 url('../img/showcase.jpeg') no-repeat
+    center center/cover;
+    color: #fff;
+    height: 100vh;
+}
+
+#show__case .showcase__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+/* Section : What We do */
+#what .items {
+    display: flex;
+    padding: 1rem;
+    text-align: left;
+}
+
+#what .items .item {
+    /* display: flex; */
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    /* align-self: center; */
+}
+
+
+
+/* section: who we are */
+.head {
+    padding-left: .5rem;
+}
+
+#who{
+    display: flex;
+}
+
+#who div{
+    flex: 1;
+}
+
+#who .who-img {
+    background: #333 url('../img/staff.jpeg') no-repeat center center/cover;   
+}
+
+.list{
+    margin: .5rem 0;
+    list-style: none;
+    padding-left: .8rem;
+}
+
+.text {
+    padding-left: .7rem;
+}
+
+.list li {
+    padding: .5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+/* Section: Clients */
+
+#clients .items{
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 65%;
+}
+
+/* Section contact */
+#contact {
+    display: flex;
+}
+
+#contact .map {
+    flex: 2;
+    display: block;
+}
+
+ #contact .contact-form {
+    flex: 1;
+    display: block;
+}
+
+#contact .contact-form .form-group {
+    margin: .75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: .5rem;
+}
